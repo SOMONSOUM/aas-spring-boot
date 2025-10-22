@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: aas
+  datasource:
+    url: jdbc:mysql://localhost:3307/aas_development
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+      format_sql: true
+    show-sql: true
